@@ -1,18 +1,16 @@
-# Getting Started with Create React App
+# Chagenge de Alkemi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Conaumimos una api de peliculas
 
-## Available Scripts
+## Creamos un Sistema de Login
 
-In the project directory, you can run:
+Mi primer paso fue la creacion de mi componente Login, 
 
-### `npm start`
+## Objetivos de aprendizaje
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Identificar los elementos indispensables que necesita este componente.
+Entender como es que React trabaja con los formularios.
+Identificar los lelementos HTML insispensables en mi componente.
 
 ### `npm test`
 
