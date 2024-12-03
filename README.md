@@ -6,17 +6,21 @@ Conaumimos una api de peliculas
 
 Mi primer paso fue la creacion de mi componente Login, para el cual se debe escribir la priimer letra en mayuscual ya que en React JSX nesecita diferenciar entre elementos HTML(minuscula) y componentes(Mayuscula).
 Los elementos en react debe retornar un solo elemento, en caso contrario utilizamos u fragmento <></>.
-
+Implementar funcion de tipo Handler
+Evitamos que el formulario se refresque implementando eventos e.preventDefault() evita que este evento se desencadene por defecto.
+Utilizamo expresion regular para validar gmail, con regexEmail.
+La valicion de la informacion sumnistrada por el usuario que utiliza la aplicaccion.
 ## Objetivos de aprendizaje
 
 Identificar los elementos indispensables que necesita este componente.
 Entender como es que React trabaja con los formularios.
 Identificar los lelementos HTML insispensables en mi componente.
 
-### `npm test`
+## Vlidacion del Formulario Login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Entender qué es la validacion de campos de un formulario.
+Identificar cómo trabajar React para trabajar con formularios.
+Implementar el uso de expresiones regulares básicas para la validación.
 
 ### `npm run build`
 
