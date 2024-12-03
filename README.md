@@ -10,6 +10,7 @@ Implementar funcion de tipo Handler
 Evitamos que el formulario se refresque implementando eventos e.preventDefault() evita que este evento se desencadene por defecto.
 Utilizamo expresion regular para validar gmail, con regexEmail.
 La valicion de la informacion sumnistrada por el usuario que utiliza la aplicaccion.
+Implementamos Libreria AXIOS para realizar peticones HTTP, utilizamos metodo POST.
 ## Objetivos de aprendizaje
 
 Identificar los elementos indispensables que necesita este componente.
@@ -22,7 +23,11 @@ Entender qué es la validacion de campos de un formulario.
 Identificar cómo trabajar React para trabajar con formularios.
 Implementar el uso de expresiones regulares básicas para la validación.
 
-### `npm run build`
+## Envío de Formulario (Peticiones HTTP)
+
+Peticiones HTTP como podemos menejarlas
+identificar como podemos hacer una peticion HTTP desde REACT
+Implementar la libreria AXIOS para hacer este tipo de peticiones
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
