@@ -17,11 +17,16 @@ function Login() {
             console.log('Direccion de correo Invalida');
             return;
         }
-        if(email !== 'CineOnline12@gmail.com' || password !== 'gratis') {
+        if(email !== 'challenge@alkemy.org' || password !== 'react') {
             console.log('Credenciales Invalidad');
             return;
         }
         console.log('Información lista para Enviar');
+        axios
+        .post('http://challenge-react.alkemy.org', {email, password})
+        .then(res => {
+            console.log(res.data);
+        })
     }
     return (
         <>
