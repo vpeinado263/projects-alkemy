@@ -4,7 +4,7 @@ Conaumimos una api de peliculas
 
 ## Creamos un Sistema de Login
 
-Mi primer paso fue la creacion de mi componente Login, 
+Mi primer paso fue la creacion de mi componente Login, para el cual se debe escribir la priimer letra en mayuscual ya que en React JSX nesecita diferenciar entre elementos HTML(minuscula) y componentes(Mayuscula).
 
 ## Objetivos de aprendizaje
 
