@@ -1,7 +1,9 @@
 import axios from "axios";
 import swAlert from '@sweetalert/with-react';
+import { useHistory } from 'react-router-dom';
 
 function Login() {
+    const history = useHistory();
     const submitHandler = e => {
         e.preventDefault();
 
@@ -35,6 +37,7 @@ function Login() {
             swAlert(<h2>Ingreso correcto</h2>)
             const tokenRecibido = res.data.token;
             localStorage.setItem('token',tokenRecibido)
+            history.push('/listado');
         })
     }
     return (
