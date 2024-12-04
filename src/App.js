@@ -9,11 +9,15 @@ function App() {
   return (
     <>
     <Header/>
-    <Switch>
-     <Route exact patch="/" component={Login} />
-     <Route patch="/listado" component={Listado} />
-    </Switch>
+    
+    <div className='container mt-3'>
+     <Switch>
+      <Route exact patch="/" component={Login} />
+      <Route patch="/listado" component={Listado} />
+     </Switch>
+
     <Footer/>
+    </div>
     </>
   );
 }
