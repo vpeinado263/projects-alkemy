@@ -13,8 +13,8 @@ function App() {
     
     {/* <div className='container mt-3'> */}
      <Routes>
-      <Route patch="/login" element={<Login />} />
-      <Route patch="/listado" element={<Listado />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/listado" element={<Listado />} />
      </Routes>
 
     <Footer/>
