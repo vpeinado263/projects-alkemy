@@ -16,6 +16,8 @@ function Listado  ()  {
       })
     }, [setMoviesList])
 
+    console.log(moviesList)
+
   return (
     <>
 
@@ -26,12 +28,12 @@ function Listado  ()  {
           moviesList.map((oneMovie, idx) => {
             return (
               <div className="col-3" key={idx}>
-                <div className="card">
-                  <img src="..." className="card-img-top"  alt="..."/>
+                <div className="card my-4">
+                  <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.backdrop_path}`} className="card-img-top"  alt="..."/>
                   <div className="card-body"></div>
-                  <h5 className="card-title">Movie title</h5>
-                  <p className="card-text">Esta tarjeta representa la card de Peliculas recien salidas del cine de manera Pirata.</p>
-                  <Link to="/" className="btn btn-primary">ver detalles</Link>
+                  <h5 className="card-title">{ oneMovie.title.substring(0, 30) }...</h5>
+                  <p className="card-text">{ oneMovie.overview.substring(0, 100) }...</p>
+                  <Link to="/" className="btn btn-secondary">ver detalles</Link>
                 </div>
               </div>
             )
