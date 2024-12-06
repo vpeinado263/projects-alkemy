@@ -30,6 +30,7 @@ iMPLEMENTAMOS EL METODO DE ITERACION .map
 Utilizamos substring me permite extraer una parte del string. como 30 letras para el h5.
 
 
+
 ## Objetivos de aprendizaje
 
 Identificar los elementos indispensables que necesita este componente.
@@ -50,7 +51,7 @@ identificar como podemos hacer una peticion HTTP desde REACT
 Implementar la libreria AXIOS para hacer este tipo de peticiones
 
 
-## Manejo de Errores (Sweet alert)
+## Manejo de Errores (Sweet alert2)
 
 Identificar por que el manejo de errores es crucial para la UX.
 Instalar e implementar librería Sweet alert.
@@ -114,3 +115,13 @@ Reconocer cuáles partes de la respuesta de la API son las que nesecitmas en nue
 Entender cómo funciona la rederización de datos dinámicos.
 Usar los estados de React a travéz de Hooks para alamecenar la información obtenida de la API.
 Usar el estado en donde almacenamos la información para hacer un renderizado condicional de la información en nuestro componente.
+
+## Manejo de Errores catch
+
+Utilizamos catch para el manejo de erores e Implementamos sweetalert2.
+
+## Ingreso al detalle de cada Ítem
+
+Entender el detalle de cada ítem deberá ser un componente aparte.
+Identificar que información necesita ese componente para mostrar la información específica.
+Implementar los componentes de React Router que nos permitan navegar desde el componente Listado hasta el componente Detalle.
