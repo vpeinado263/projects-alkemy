@@ -1,6 +1,7 @@
 import { Link, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import swAlert from 'sweetalert2';
 
 function Listado  ()  {
     let  token = localStorage.getItem('token')
@@ -14,9 +15,15 @@ function Listado  ()  {
         const apiData = response.data;
         setMoviesList(apiData.results);
       })
+      .catch(error => {
+        swAlert.fire(
+          {
+              title: 'Hubo errores, Intenta mas tarde',
+              html: 'Servidor sin funciones.',
+              icon: 'error'
+          } );
+      })
     }, [setMoviesList])
-
-    console.log(moviesList)
 
   return (
     <>
