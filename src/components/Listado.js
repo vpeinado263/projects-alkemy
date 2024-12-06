@@ -1,4 +1,4 @@
-import { Link, Redirect } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 function Listado () {
     let  token = localStorage.getItem('token')
@@ -6,7 +6,7 @@ function Listado () {
     return (
         <>
 
-        { !token && <Redirect to="/" />}
+        { !token && <Navigate to="/" />}
 
         <div className="row"> 
          <div className="col-3">
