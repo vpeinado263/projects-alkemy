@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Detalle from './components/Detalle';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Listado from './components/Listado';
@@ -14,9 +15,9 @@ function App() {
     <div className='container mt-3'>
 
       <Routes>
-        <Route path="/" element={<Footer />}/>
-        <Route path="/listado" element={<Listado />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/listado" element={<Listado />} />
+        <Route path="/detalle" element={<Detalle />}/>
       </Routes>
 
       <Footer/>
