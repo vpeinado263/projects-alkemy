@@ -1,43 +1,52 @@
 import axios from "axios";
 import swAlert from 'sweetalert2';
-import { useHistory, Redirect } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 
 function Login() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const submitHandler = e => {
         e.preventDefault();
 
         const email = e.target.email.value;
         const password = e.target.password.value;
         const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        console.log(regexEmail.test(email));
+       
 
         if(email === '' || password === '') {
-            swAlert(
-                <div>
-                    <h2>Los campos no pueden estar vacíos</h2>
-                    <p>Debes completar las seldas de correo electronico y contraseña</p>
-                </div>
-                
-            )
+            swAlert.fire(
+                {
+                    title: 'Los campos no pueden estar vacíos',
+                    html: 'Debes completar las celdas de correo electrónico y contraseña.',
+                    icon: 'error'
+                } );
+
             return;
         }
         if(email !== '' && !regexEmail.test(email)) {
-            swAlert(<h2>Direccion de correo Invalida</h2>);
+            swAlert.fire({
+                title: 'Dirección de correo inválida',
+                icon: 'error'
+            });
             return;
         }
         if(email !== 'challenge@alkemy.org' || password !== 'react') {
-            swAlert(<h2>Credenciales Inválidas</h2>);
+            swAlert.fire({
+                title: 'Credenciales inválidas',
+                icon: 'error'
+            });
             return;
         }
     
         axios
         .post('http://challenge-react.alkemy.org', {email, password})
         .then(res => {
-            swAlert(<h2>Ingreso correcto</h2>)
+            swAlert.fire({
+                title: 'Ingreso correcto',
+                icon: 'success'
+            })
             const tokenRecibido = res.data.token;
             localStorage.setItem('token',tokenRecibido)
-            history.push('/listado');
+            navigate.push('/listado');
         })
     }
 
