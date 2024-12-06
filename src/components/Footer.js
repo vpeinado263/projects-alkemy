@@ -16,7 +16,7 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
-            <p className="mb-0">Coyrigyh Alkemy Challenge</p>
+            <p className="mb-0">Copyrigth Alkemy Challenge</p>
         </footer>
     )
 }
