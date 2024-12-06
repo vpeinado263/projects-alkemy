@@ -12,11 +12,9 @@ function Listado  ()  {
       axios.get(endPoint)
       .then(response => {
         const apiData = response.data;
-        setMoviesList(apiData.result);
+        setMoviesList(apiData.results);
       })
     }, [setMoviesList])
-
-  console.log(moviesList);
 
   return (
     <>
@@ -24,19 +22,24 @@ function Listado  ()  {
         { !token && <Navigate to="/" />}
 
         <div className="row"> 
-         <div className="col-3">
-             <div className="card">
-                 <img src='...' className='card-img-top'  alt='...'/>
-                 <div className='card-body'></div>
-                 <h5 className='card-title'>Movie title</h5>
-                 <p className='card-text'>gwwwwwwwwwwwwwwwwwwwfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-                 <Link href="/" className='btn btn-primary'>ver detalles</Link>
-             </div>
-         </div>
+        {
+          moviesList.map((oneMovie, idx) => {
+            return (
+              <div className="col-3" key={idx}>
+                <div className="card">
+                  <img src="..." className="card-img-top"  alt="..."/>
+                  <div className="card-body"></div>
+                  <h5 className="card-title">Movie title</h5>
+                  <p className="card-text">Esta tarjeta representa la card de Peliculas recien salidas del cine de manera Pirata.</p>
+                  <Link to="/" className="btn btn-primary">ver detalles</Link>
+                </div>
+              </div>
+            )
+          })
+        }
         </div>
         </>
   )
 }
 
 export default Listado;
-;
