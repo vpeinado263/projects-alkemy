@@ -23,9 +23,11 @@ Un componente es un bloque de codigo reutilizable.
 Tnto el header como el footer tiene la peculiaridad de estar omnipresente (en todos lados) 
 Aprendimos de SPA (single page application) y como realizar la omnipresncia de los componentes footer y header.
 Implemantamos una libreria css para facilitar los estilos y centrarnos en la logica del proyecto.
-Implementamos estilos con bootstrap, descargamos los estilos css. Utilizamos la hoja bootstrap.min.css
+Implementamos estilos con bootstrap, descargamos los estilos css. Utilizamos la hoja bootstrap.min.css sin depender de un CDN
 Proteger una ruta, Creamos un renderizado condicional.
-
+Guardamos la informacion de la API en un estado.
+iMPLEMENTAMOS EL METODO DE ITERACION .map
+Utilizamos substring me permite extraer una parte del string. como 30 letras para el h5.
 
 
 ## Objetivos de aprendizaje
@@ -106,3 +108,9 @@ Generar un sistema de redirección al visitante de la app, en dado caso que no e
 
 Conocer cuáles son los requerimientos mínimos que la API espera de nuetra. aplicación para entregarnos la información.
 Reconocer cuáles partes de la respuesta de la API son las que nesecitmas en nuestra aplicación.
+
+## Renderización de datos en componente
+
+Entender cómo funciona la rederización de datos dinámicos.
+Usar los estados de React a travéz de Hooks para alamecenar la información obtenida de la API.
+Usar el estado en donde almacenamos la información para hacer un renderizado condicional de la información en nuestro componente.
