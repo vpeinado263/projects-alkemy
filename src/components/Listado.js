@@ -1,10 +1,9 @@
 import { Link, Navigate } from 'react-router-dom';
 
-function Listado () {
+function Listado  ()  {
     let  token = localStorage.getItem('token')
-       
-    return (
-        <>
+  return (
+    <>
 
         { !token && <Navigate to="/" />}
 
@@ -20,7 +19,8 @@ function Listado () {
          </div>
         </div>
         </>
-    )
+  )
 }
 
 export default Listado;
+;
