@@ -27,10 +27,10 @@ function Listado  ()  {
 
   return (
     <>
-
         { !token && <Navigate to="/" />}
 
         <div className="row"> 
+        {/*Estructura Base*/}
         {
           moviesList.map((oneMovie, idx) => {
             return (
