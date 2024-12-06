@@ -4,9 +4,9 @@ function Footer() {
     return(
         <footer>
             <nav>
-                <ul><Link href="https://youtube.com"></Link></ul>
-                <ul><Link href="https://imstagram.com"></Link></ul>
-                <ul><Link href="https://facebook.com"></Link></ul>
+                <ul><Link to="https://youtube.com"></Link></ul>
+                <ul><Link to="https://imstagram.com"></Link></ul>
+                <ul><Link to="https://facebook.com"></Link></ul>
             </nav>
             <p>Coyrigyh Alkemy Challenge</p>
         </footer>
