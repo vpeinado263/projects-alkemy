@@ -1,6 +1,6 @@
 # Chagenge de Alkemi
 
-Conaumimos una api de peliculas
+Construyamos con una api de peliculas
 
 ## Creamos un Sistema de Login
 
@@ -17,6 +17,16 @@ Utilizamos localStorage es  un objeto (solo almacena string), que nos ofrece nue
 Implementamos un sistema de ruteo con react-route-dom.
 El objetivo del proyeto es mostrar un listado de peliculas.
 Utilizamos un hooks useHistory y useEffect.
+Creamos una barra de Navegacion, conocemos la etiqueta Link
+Desarrollamos un Footer con enlaces tradicionales, y reconocemos el atributo rel="noopenernoreferrer"
+Un componente es un bloque de codigo reutilizable.
+Tnto el header como el footer tiene la peculiaridad de estar omnipresente (en todos lados) 
+Aprendimos de SPA (single page application) y como realizar la omnipresncia de los componentes footer y header.
+Implemantamos una libreria css para facilitar los estilos y centrarnos en la logica del proyecto.
+Implementamos estilos con bootstrap, descargamos los estilos css. Utilizamos la hoja bootstrap.min.css
+Proteger una ruta, Creamos un renderizado condicional.
+
+
 
 ## Objetivos de aprendizaje
 
@@ -59,22 +69,40 @@ Implementear la redirección hacía el componente Listado, una vez obtenido el t
 
 
 
-### Analyzing the Bundle Size
+## Armado del Encabezado y la Navegación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Identificar cuales elementos HTML componen una barra de navegacion.
+Definir que componentes de React Router vamos a utilizar.
+Implementar un componente Header que contenga la barra de navegación.
 
-### Making a Progressive Web App
+## Armado del pié de página
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Identificar cuál es el contenido mas comúnmente presente en el footer de un sitio web.
+Definir que elementos HTML necesitamos para armar el footer de nuestra aplicación.
+Estructurar un componente que contenga la información requerida y la lógica necesaria para que funcione perfectamente.
 
-### Advanced Configuration
+## Integración del encabezado y la navegación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Identificar en que lugar de nuestra aplicación deberá implementarse el componente HEADER.
+Integrar el componente HEADER al flow de nuestra Aplicación.
 
-### Deployment
+## Integracion de Libreria CSS
+Visualizar las distintas maneras que tiene React para trabajar con CSS.
+Definir cuál será la manera más cómoda para encarar el desarrollo del challenge.
+Implementar la libreria de CSS que se adapte a nuestra necesidad.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Armado de la vista
+Identificar los elementos HTML que vamos  nesecitar
+Definir que información nsescita el componente para trabajar
+Implementar un código JSX que nos permita mostrar perefctamente la información.
 
-### `npm run build` fails to minify
+## Protección de la ruta "/listado"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Entender como se protegen y el "por qué" de esta nesecidad
+Definir que nesecitamos de nuestra aplicación para proteger esta ruta en particular
+Generar un sistema de redirección al visitante de la app, en dado caso que no esté autenticado para visualizar esta ruta
+
+## Obtención de datos desde la API
+
+Conocer cuáles son los requerimientos mínimos que la API espera de nuetra. aplicación para entregarnos la información.
+Reconocer cuáles partes de la respuesta de la API son las que nesecitmas en nuestra aplicación.
