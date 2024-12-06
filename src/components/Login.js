@@ -46,7 +46,7 @@ function Login() {
             })
             const tokenRecibido = res.data.token;
             localStorage.setItem('token',tokenRecibido)
-            navigate.push('/listado');
+            navigate('/listado');
         })
     }
 
@@ -54,7 +54,7 @@ function Login() {
 
     return (
         <>
-        {token && <Redirect to="/listado" />}
+        {token && <Navigate to="/listado" />}
 
         <h2>Ingresar a Cuenta</h2>
         <form onSubmit={submitHandler}>
