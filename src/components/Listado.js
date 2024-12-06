@@ -9,7 +9,7 @@ function Listado  ()  {
     const [ moviesList, setMoviesList ] = useState([]);
 
     useEffect(() => {
-      const endPoint = 'https://api.themoviedb.org/3/discover/movie?api_key=f5b6ca4129cc9319b4f7ef192362f127&language=es-ES&page=1'
+      const endPoint = 'https://api.themoviedb.org/3/discover/movie?api_key=f5b6ca4129cc9319b4f7ef192362f127&language=es-ES'
       axios.get(endPoint)
       .then(response => {
         const apiData = response.data;
