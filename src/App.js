@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Listado from './components/Listado';
@@ -11,10 +11,10 @@ function App() {
     <Header/>
     
     <div className='container mt-3'>
-     <Switch>
+     <Routes>
       <Route exact patch="/" component={Login} />
       <Route patch="/listado" component={Listado} />
-     </Switch>
+     </Routes>
 
     <Footer/>
     </div>
