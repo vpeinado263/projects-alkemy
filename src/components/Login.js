@@ -1,5 +1,5 @@
 import axios from "axios";
-import swAlert from '@sweetalert/with-react';
+import swAlert from 'sweetalert2';
 import { useHistory, Redirect } from 'react-router-dom';
 
 function Login() {
