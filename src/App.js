@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-    <Header/>
+    <Header />
   
     <div className='container mt-3'>
 
       <Routes>
-        <Route path="/"/>
+        <Route path="/" element={<Footer />}/>
         <Route path="/listado" element={<Listado />} />
         <Route path="/login" element={<Login />} />
       </Routes>
