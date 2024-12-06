@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Listado from './components/Listado';
+import Listado from './components/Listado'
 import Login from "./components/Login";
 import './css/bootstrap.min.css';
 
@@ -10,14 +10,15 @@ function App() {
     <>
     <Header/>
     
-    <div className='container mt-3'>
+    {/* <div className='container mt-3'> */}
      <Routes>
-      <Route exact patch="/" component={Login} />
-      <Route patch="/listado" component={Listado} />
+      <Route patch="/Login" element={<Login />} />
+      <Route patch="/Listado" element={<Listado />} />
      </Routes>
 
     <Footer/>
-    </div>
+   
+   
     </>
   );
 }
