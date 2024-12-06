@@ -125,3 +125,9 @@ Utilizamos catch para el manejo de erores e Implementamos sweetalert2.
 Entender el detalle de cada ítem deberá ser un componente aparte.
 Identificar que información necesita ese componente para mostrar la información específica.
 Implementar los componentes de React Router que nos permitan navegar desde el componente Listado hasta el componente Detalle.
+
+## ¿Entonces la API KEY es lo mismo que el TOKEN?
+No. El token es la confirmación de que la persona que se ha logueado en la
+aplicación lo hizo con las credenciales correctas, mientras que la API KEY es
+la "llave" que nos identifica frente a la API, para que la misma pueda atender
+nuestros llamados.
