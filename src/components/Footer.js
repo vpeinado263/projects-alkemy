@@ -2,13 +2,21 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return(
-        <footer>
+        <footer className="bg-dark text-white text-center py-4">
             <nav>
-                <ul><Link to="https://youtube.com"></Link></ul>
-                <ul><Link to="https://imstagram.com"></Link></ul>
-                <ul><Link to="https://facebook.com"></Link></ul>
+                <ul className="list-unstyled d-flex justify-content-center mb-3">
+                    <li className="mx-2">
+                     <Link to="https://youtube.com">Youtube</Link>
+                    </li>
+                    <li className="mx-2">
+                     <Link to="https://imstagram.com">Imstagram</Link>
+                    </li>
+                    <li className="mx-2">
+                     <Link to="https://facebook.com">Facebook</Link>
+                    </li>
+                </ul>
             </nav>
-            <p>Coyrigyh Alkemy Challenge</p>
+            <p className="mb-0">Coyrigyh Alkemy Challenge</p>
         </footer>
     )
 }
