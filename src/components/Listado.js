@@ -40,7 +40,7 @@ function Listado  ()  {
                   <div className="card-body"></div>
                   <h5 className="card-title text-truncate">{ oneMovie.title.substring(0, 30) }...</h5>
                   <p className="card-text text-truncate">{ oneMovie.overview.substring(0, 100) }...</p>
-                  <Link to="/detalle" className="btn btn-secondary btn-sm">ver detalles</Link>
+                  <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-secondary btn-sm">ver detalles</Link>
                 </div>
               </div>
             )
