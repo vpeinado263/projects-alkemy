@@ -55,21 +55,46 @@ function Login() {
     return (
         <>
         {token && <Navigate to="/listado" />}
-
-        <h2>Ingresar a Cuenta</h2>
-        <form onSubmit={submitHandler}>
-            <label>
-                <span>Correo Electrónico</span> <br />
-                <input type="text" name="email" />
-            </label>
-            <br />
-            <label>
-                <span>Contraseña</span> <br />
-                <input type="password" name="password" />
-            </label>
-            <br />
-            <button type="submit">Ingresar</button>
-        </form>
+      <div className="container mt-5">
+        <div className="row justify-content-center">
+          <div className="col-md-6 col-12">
+            <div className="card p-4 shadow-sm">
+              <h2 className="text-center mb-4">Ingresar a Cuenta</h2>
+              <form onSubmit={submitHandler}>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">
+                    Correo Electrónico
+                  </label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    className="form-control"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label">
+                    Contraseña
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    className="form-control"
+                    required
+                  />
+                </div>
+                <div className="d-flex justify-content-center">
+                  <button type="submit" className="btn btn-primary w-100">
+                    Ingresar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
         </>
     )
 }

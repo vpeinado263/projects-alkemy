@@ -7,7 +7,7 @@ function Header () {
                 <div className="container">
                     <ul>
                         <Link to="/" className="navbar-brand">
-                            Home
+                            FilmMovie
                         </Link>
                         <button
                         className="navbar-toggler"
@@ -22,14 +22,14 @@ function Header () {
                         </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul  className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <Link to="/listado" className="nav-link">
-                                    Listado
+                        <li className="nav-item">
+                                <Link className="nav-link" to="/login">
+                                    Home
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/login">
-                                    Registro
+                                <Link to="/listado" className="nav-link">
+                                    Listado
                                 </Link>
                             </li>
                         </ul>
