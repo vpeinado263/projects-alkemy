@@ -28,21 +28,24 @@ Proteger una ruta, Creamos un renderizado condicional.
 Guardamos la informacion de la API en un estado.
 iMPLEMENTAMOS EL METODO DE ITERACION .map
 Utilizamos substring me permite extraer una parte del string. como 30 letras para el h5.
-
-
+Podar .trim, cuando el usuario deja espacios al azar en el fromulario.
+La API nos provee un sistema de busqueda
 
 ## Objetivos de aprendizaje
 
 Identificar los elementos indispensables que necesita este componente.
 Entender como es que React trabaja con los formularios.
 Identificar los lelementos HTML insispensables en mi componente.
+Los componentess listado y y resultados se parecen demasiado
 
 ## Vlidación del Formulario Login
 
 Entender qué es la validacion de campos de un formulario.
 Identificar cómo trabajar React para trabajar con formularios.
 Implementar el uso de expresiones regulares básicas para la validación.
-El manejos de errores es crucial para indicarle al usuario que maneja nuestra aplicacion 
+El manejos de errores es crucial para indicarle al usuario que maneja nuestra aplicacion.
+e.preventDefault evita que la pagina recrge.
+la importancia de value.
 
 ## Envío de Formulario (Peticiones HTTP)
 
@@ -131,3 +134,32 @@ No. El token es la confirmación de que la persona que se ha logueado en la
 aplicación lo hizo con las credenciales correctas, mientras que la API KEY es
 la "llave" que nos identifica frente a la API, para que la misma pueda atender
 nuestros llamados.
+Lmanera en como se use el URLSearchParams en el componente Resultados.
+
+## localStorage y sessionStorage
+
+vemos su principal diferenciacion, como eliminar el token. Las credenciales son : challenge@alkemy.org react.
+
+## Armado de la vista al Detalle
+
+Reconocer la importancia y necesidad de esta vista.
+Entender cómo podemos capturar la información que viaja en la URL con Java Script.
+Definimos en que parte del componente podemos hacer llamados asíncronos.
+
+## Armado del componente Buscador
+
+Reconocer los elementos HTML necesarios para implementar una barra de búsqueda.
+Definir en qué lugar de nuestra aplicacion deberá estar presente esta barra.
+Verifica que la infromación suinistrada en esta barra de búsqueda, la podemos capturar.
+
+## Validando el formulario de búsqueda
+
+Entender por que es indispensble vvalidar la información suministrada en este formulario.
+Implementar un proceso de validación sencillo.
+Manipular un sistema de alertas para cuando se presente errores de validación.
+
+## Redireccionamiento a la sección "Resultados"
+
+Reconocer en qué momento debemos hacer el redireccionamiento a esta sección.
+Capturar ola información presente en la URL con Java Script y trabaja con la misma.
+Limpiar la información que viaja en la URL para evitar errores.
