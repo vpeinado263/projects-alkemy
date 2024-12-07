@@ -1,8 +1,6 @@
 function Resultados () {
   return (
-    <div>
-      
-    </div>
+   <h2>Seccion de Resultados</h2>
   )
 }
 
