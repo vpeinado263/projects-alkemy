@@ -6,26 +6,24 @@ function Header () {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div className="container d-flex justify-content-between align-items-center">
-
-                        {/*Logo*/}
-                        <Link to="/" className="navbar-brand">
-                            FilmMovie
-                        </Link>
-
+                <div className="container">
                         {/*Barra de navegacion*/}
-                        <ul  className="navbar-nav d-flex flex-row gap-3">
-                        <li className="nav-item">
+                        <ul  className="navbar-nav">
+                             {/*Logo*/}
+                            <Link to="/" className="navbar-brand">
+                                FilmMovie
+                            </Link>
+                            <li>
                                 <Link className="nav-link" to="/login">
                                     Home
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/listado" className="nav-link">
+                            <li>
+                                <Link className="nav-link" to="/listado" >
                                     Listado
                                 </Link>
                             </li>
-                    </ul>
+                        </ul>
                     
                 </div>
                 <Buscador />
