@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Listado from './components/Listado';
 import Login from './components/Login';
+import Resultados from './components/Resultados';
 import './css/bootstrap.min.css';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/listado" element={<Listado />} />
-        <Route path="/detalle" element={<Detalle />}/>
+        <Route path="/detalle" element={<Detalle />} />
+        <Route path="/reultado" element={<Resultados />} />
       </Routes>
 
       <Footer/>
