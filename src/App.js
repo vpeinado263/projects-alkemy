@@ -19,7 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/listado" element={<Listado />} />
         <Route path="/detalle" element={<Detalle />} />
-        <Route path="/reultado" element={<Resultados />} />
+        <Route path="/reultados" element={<Resultados />} />
       </Routes>
 
       <Footer/>
