@@ -45,12 +45,12 @@ function Login() {
                 icon: 'success'
             })
             const tokenRecibido = res.data.token;
-            localStorage.setItem('token',tokenRecibido)
+            sessionStorage.setItem('token',tokenRecibido)
             navigate('/listado');
         })
     }
 
-    let token = localStorage.getItem('token');
+    let token = sessionStorage.getItem('token');
 
     return (
         <>
