@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom';
 
 function Detalle () {
-  let token = localStorage.getItem('token');
+  let token = sessionStorage.getItem('token');
   return (
     <>
       { !token && <Navigate to="/" />}
