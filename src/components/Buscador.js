@@ -1,12 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import swAlert from 'sweetalert2';
 
 function Buscador() {
+    const navigate = useNavigate();
     const submitHandler = e => {
 
-        e.preventDefault()
-
-        const keyword = e.currentTarget.keyword.value.trim();
-        console.log(keyword)
+    e.preventDefault()
+    const keyword = e.currentTarget.keyword.value.trim();
 
         if( keyword.length === 0 ) {
             swAlert.fire(
@@ -23,6 +23,10 @@ function Buscador() {
                     icon: 'error'
                 }
             )
+        } else {
+            //Redirige ala página de resultados
+            e.currentTarget.keyword.value = '';
+            navigate(`/resultados?keyword=${keyword}`);
         }
     }
 
