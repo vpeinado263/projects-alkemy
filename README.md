@@ -29,7 +29,11 @@ Guardamos la informacion de la API en un estado.
 iMPLEMENTAMOS EL METODO DE ITERACION .map
 Utilizamos substring me permite extraer una parte del string. como 30 letras para el h5.
 Podar .trim, cuando el usuario deja espacios al azar en el fromulario.
-La API nos provee un sistema de busqueda
+La API nos provee un sistema de busqueda.
+Típico boton de corazón.
+Favorito es una informacion que queda almacenada a nivel local dentro del sitio como en el loclaStorage.
+Vemos la props addOrRemoveFromFavs.
+Utilizamo metodo .find.
 
 ## Objetivos de aprendizaje
 
@@ -135,7 +139,9 @@ aplicación lo hizo con las credenciales correctas, mientras que la API KEY es
 la "llave" que nos identifica frente a la API, para que la misma pueda atender
 nuestros llamados.
 Lmanera en como se use el URLSearchParams en el componente Resultados.
-
+Vemos parentElement de Java Script que captura al elemento padre del elemento. pare.querySelector.
+creaccion de un objeto Literal movieData con un objetivo principal.
+Utilizamos los atributo date de HTML 5.
 ## localStorage y sessionStorage
 
 vemos su principal diferenciacion, como eliminar el token. Las credenciales son : challenge@alkemy.org react.
