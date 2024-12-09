@@ -36,10 +36,10 @@ function Listado  (props)  {
             return (
               <div className="col-4 col-sm-4" key={idx}>
                 <div className="card my-4 shadow-sm">
-                  <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.backdrop_path}`} className="card-img-top"  alt={oneMovie.title}/>
+                  <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top"  alt={oneMovie.title}/>
                   <button 
                   className="favourite-btn"
-                  onClick={props.addOrRemoveFromFavs}
+                  onClick={() => props.addOrRemoveFromFavs(oneMovie)}
                   >🖤</button>
                   <div className="card-body"></div>
                   <h5 className="card-title text-truncate">{ oneMovie.title.substring(0, 30) }...</h5>

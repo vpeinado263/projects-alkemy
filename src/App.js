@@ -22,7 +22,7 @@ function App() {
 
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/listado" render={ (props) => <Listado addOrRemoveFromFavs={addOrRemoveFromFavs} {...props}/>} />
+        <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
         <Route path="/detalle" element={<Detalle />} />
         <Route path="/resultados" element={<Resultados />} />
       </Routes>
