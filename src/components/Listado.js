@@ -40,6 +40,7 @@ function Listado  (props)  {
                   <button 
                   className="favourite-btn"
                   onClick={(e) => props.addOrRemoveFromFavs(e, oneMovie)}
+                  data-movie-id={oneMovie.id}
                   >🖤</button>
                   <div className="card-body"></div>
                   <h5 className="card-title text-truncate">{ oneMovie.title.substring(0, 30) }...</h5>
