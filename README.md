@@ -163,3 +163,9 @@ Manipular un sistema de alertas para cuando se presente errores de validación.
 Reconocer en qué momento debemos hacer el redireccionamiento a esta sección.
 Capturar ola información presente en la URL con Java Script y trabaja con la misma.
 Limpiar la información que viaja en la URL para evitar errores.
+
+## Armando la lógica de "Agregar favoritos"
+
+Implementar un mecanismo que nos permita elegir un ítem y agregarlo a un almacenamiento loca.
+Desarrollar las funcionalidades para Agregar/ Eliminar ítems de dicho almacenamiento.
+Generar un recurso Gráfico en la interfaz que nos permita saber que ítems se han agregado a "Favotitos".
