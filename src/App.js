@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Listado from './components/Listado';
 import Login from './components/Login';
 import Resultados from './components/Resultados';
+import './css/app.css';
 import './css/bootstrap.min.css';
 
 function App() {
