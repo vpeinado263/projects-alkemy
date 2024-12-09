@@ -15,7 +15,13 @@ function App() {
     const btn = e.currentTarget;
     const parent = btn.parentElement;
     const imgURL = parent.querySelector('img').getAttribute('src');
-    console.log(imgURL);
+    const title = parent.querySelector('h5').innerText;
+    const overview = parent.querySelector('p').innerText;
+    
+    const movieData = {
+      imgURL, title, overview
+    }
+    console.log(movieData);
   }
 
   return (
