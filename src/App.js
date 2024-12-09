@@ -10,6 +10,10 @@ import './css/bootstrap.min.css';
 
 function App() {
 
+  const addOrRemoveFromFavs = () => {
+    console.log('ok funcionó');
+  }
+
   return (
     <>
     <Header />
@@ -18,7 +22,7 @@ function App() {
 
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/listado" element={<Listado />} />
+        <Route path="/listado" render={ (props) => <Listado addOrRemoveFromFavs={addOrRemoveFromFavs} {...props}/>} />
         <Route path="/detalle" element={<Detalle />} />
         <Route path="/resultados" element={<Resultados />} />
       </Routes>
