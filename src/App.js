@@ -5,13 +5,17 @@ import Header from './components/Header';
 import Listado from './components/Listado';
 import Login from './components/Login';
 import Resultados from './components/Resultados';
+//Styles
 import './css/app.css';
 import './css/bootstrap.min.css';
 
 function App() {
 
-  const addOrRemoveFromFavs = () => {
-    console.log('ok funcionó');
+  const addOrRemoveFromFavs = (e) => {
+    const btn = e.currentTarget;
+    const parent = btn.parentElement;
+    const imgURL = parent.querySelector('img').getAttribute('src');
+    console.log(imgURL);
   }
 
   return (

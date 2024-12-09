@@ -39,7 +39,7 @@ function Listado  (props)  {
                   <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top"  alt={oneMovie.title}/>
                   <button 
                   className="favourite-btn"
-                  onClick={() => props.addOrRemoveFromFavs(oneMovie)}
+                  onClick={(e) => props.addOrRemoveFromFavs(e, oneMovie)}
                   >🖤</button>
                   <div className="card-body"></div>
                   <h5 className="card-title text-truncate">{ oneMovie.title.substring(0, 30) }...</h5>
