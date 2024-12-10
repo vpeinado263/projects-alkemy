@@ -23,6 +23,11 @@ function Header () {
                                     Listado
                                 </Link>
                             </li>
+                            <li>
+                                <Link className="nav-link" to="/favoritos" >
+                                    Favoritos
+                                </Link>
+                            </li>
                         </ul>
                     
                 </div>
