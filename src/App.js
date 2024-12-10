@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 //Styles
 import './css/app.css';
 import './css/bootstrap.min.css';
+import Home from './components/Home';
 
 function App() {
   const [ favorites, setFavorites ] = useState([]);
@@ -71,6 +72,7 @@ function App() {
     <div className='container mt-3'>
 
       <Routes>
+      <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
         <Route path="/detalle" element={<Detalle />} />
