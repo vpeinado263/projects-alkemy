@@ -6,11 +6,22 @@ import Header from './components/Header';
 import Listado from './components/Listado';
 import Login from './components/Login';
 import Resultados from './components/Resultados';
+import { useState, useEffect } from 'react';
 //Styles
 import './css/app.css';
 import './css/bootstrap.min.css';
 
 function App() {
+  const [ favorites, setFavorites ] = useState([]);
+  useEffect(() => {
+      const favsInLocal = localStorage.getItem('favs');
+    
+      if (favsInLocal != null) {
+          const favsArray = JSON.parse(favsInLocal);
+          setFavorites(favsArray);
+      }
+
+  }, [])
 
   const favMovies = localStorage.getItem('favs');
   let tempMoviesInFavs;
@@ -39,12 +50,14 @@ function App() {
     if(!movieIsInArray) {
       tempMoviesInFavs.push(movieData);
       localStorage.setItem('favs', JSON.stringify(tempMoviesInFavs));
+      setFavorites(tempMoviesInFavs);
       console.log('Seagregó la pelicula');
     } else {
       let movieLeft = tempMoviesInFavs.filter(oneMovie => {
         return oneMovie.id !== movieData.id
       });
       localStorage.setItem('favs', JSON.stringify(movieLeft));
+      setFavorites(movieLeft);
       console.log('Se elininó la película');
     }
 
@@ -62,7 +75,7 @@ function App() {
         <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
         <Route path="/detalle" element={<Detalle />} />
         <Route path="/resultados" element={<Resultados addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
-        <Route path="/favoritos" element={<Favoritos addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
+        <Route path="/favoritos" element={<Favoritos favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
       </Routes>
 
       <Footer/>
