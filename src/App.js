@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Detalle from './components/Detalle';
+import Favoritos from './components/Favoritos';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Listado from './components/Listado';
@@ -61,6 +62,7 @@ function App() {
         <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
         <Route path="/detalle" element={<Detalle />} />
         <Route path="/resultados" element={<Resultados />} />
+        <Route path="/favoritos" element={<Favoritos />} />
       </Routes>
 
       <Footer/>
