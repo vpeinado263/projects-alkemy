@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 //Components
 import Buscador from './Buscador';
 
-function Header () {
+function Header (props) {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,6 +27,13 @@ function Header () {
                                 <Link className="nav-link" to="/favoritos" >
                                     Favoritos
                                 </Link>
+                            </li>
+                            <li className="d-flex align-items-center">
+                                <span className="text-success">
+                                    {
+                                        props.favorites.length > 0 && <>Peliculas en Favoritos: {props.favorites.length}</>
+                                    }
+                                </span>
                             </li>
                         </ul>
                     
