@@ -181,3 +181,9 @@ Generar un recurso Gráfico en la interfaz que nos permita saber que ítems se h
 Reconocer los elementos de informaión que se van a renderizar en este componente y de donde podemos obtener esa información.
 Implementar un mecanismo que nos permita mostrar esta información en la interfaz sin la nesecidad de llamar a una API.
 Desarrollar una validadción básica que nos permita saber si existe ítems pertenecientes a una categoría agregados en esta sección.
+
+## Finalizando la sección "Favoritos" y revisando toda la aplicación.
+
+Dar los últimos retoques finales a esta aplicación para dejarla lo más prolija posible.
+Verificar que todo el flujo de la aplicación funciona correctamente.
+Implementar los ajuste necesarios para cubrir un manejo de los errores si fuese necesario.
