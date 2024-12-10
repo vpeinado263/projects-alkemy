@@ -175,3 +175,9 @@ Limpiar la información que viaja en la URL para evitar errores.
 Implementar un mecanismo que nos permita elegir un ítem y agregarlo a un almacenamiento loca.
 Desarrollar las funcionalidades para Agregar/ Eliminar ítems de dicho almacenamiento.
 Generar un recurso Gráfico en la interfaz que nos permita saber que ítems se han agregado a "Favotitos".
+
+## Armando el componente "favoritos"
+
+Reconocer los elementos de informaión que se van a renderizar en este componente y de donde podemos obtener esa información.
+Implementar un mecanismo que nos permita mostrar esta información en la interfaz sin la nesecidad de llamar a una API.
+Desarrollar una validadción básica que nos permita saber si existe ítems pertenecientes a una categoría agregados en esta sección.
