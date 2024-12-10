@@ -38,7 +38,7 @@ function Login() {
         }
     
         axios
-        .post('http://challenge-react.alkemy.org', {email, password})
+        .post('https://challenge-react.alkemy.org', {email, password})
         .then(res => {
             swAlert.fire({
                 title: 'Ingreso correcto',
@@ -82,7 +82,7 @@ function Login() {
                     name="password"
                     id="password"
                     className="form-control"
-                    required
+                    required autocomplete="current-password"
                   />
                 </div>
                 <div className="d-flex justify-content-center">
