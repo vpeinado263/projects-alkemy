@@ -1,8 +1,6 @@
 function Favoritos () {
   return (
-    <div>
-      
-    </div>
+    <h2>Sección Favoritos</h2>
   )
 }
 
