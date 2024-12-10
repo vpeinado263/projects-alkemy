@@ -66,7 +66,7 @@ function App() {
 
   return (
     <>
-    <Header />
+    <Header favorites={favorites}/>
   
     <div className='container mt-3'>
 
