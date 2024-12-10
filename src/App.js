@@ -7,10 +7,10 @@ import Listado from './components/Listado';
 import Login from './components/Login';
 import Resultados from './components/Resultados';
 import { useState, useEffect } from 'react';
+import Home from './components/Home';
 //Styles
 import './css/app.css';
 import './css/bootstrap.min.css';
-import Home from './components/Home';
 
 function App() {
   const [ favorites, setFavorites ] = useState([]);

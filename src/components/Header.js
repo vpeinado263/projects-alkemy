@@ -10,11 +10,11 @@ function Header (props) {
                         {/*Barra de navegacion*/}
                         <ul  className="navbar-nav">
                              {/*Logo*/}
-                            <Link to="/" className="navbar-brand">
+                            <Link to="/login" className="navbar-brand">
                                 FilmMovie
                             </Link>
                             <li>
-                                <Link className="nav-link" to="/login">
+                                <Link className="nav-link" to="/">
                                     Home
                                 </Link>
                             </li>
