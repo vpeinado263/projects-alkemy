@@ -1,22 +1,13 @@
-import { useState, useEffect } from "react";
+import { Link, Navigate } from 'react-router-dom';
 
 function Favoritos (props) {
-    // const [ favorites, setFavorites ] = useState([]);
-    // useEffect(() => {
-    //     const favsInLocal = localStorage.getItem('favs');
-       
-
-    //     if (favsInLocal != null) {
-    //         const favsArray = JSON.parse(favsInLocal);
-    //         setFavorites(favsArray);
-    //     }
-
-    // }, [])
+  let  token = sessionStorage.getItem('token')
   return (
     <>
+    { !token && <Navigate to="/" />}
      <h2>Sección Favoritos</h2>
      <div className="row"> 
-        {/*Estructura Base*/}
+        { !props.favorites.length && <div className="col-12 text-danger">Nada Por Aquí </div>}
         {
           props.favorites.map((oneMovie, idx) => {
             return (
@@ -31,7 +22,7 @@ function Favoritos (props) {
                   <div className="card-body"></div>
                   <h5 className="card-title text-truncate">{ oneMovie.title.substring(0, 30) }...</h5>
                   <p className="card-text text-truncate">{ oneMovie.overview.substring(0, 100) }...</p>
-                  {/* <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-secondary btn-sm">ver detalles</Link> */}
+                  <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-secondary btn-sm">ver detalles</Link> 
                 </div>
               </div>
             )
