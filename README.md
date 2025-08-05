@@ -144,7 +144,7 @@ creaccion de un objeto Literal movieData con un objetivo principal.
 Utilizamos los atributo date de HTML 5.
 ## localStorage y sessionStorage
 
-vemos su principal diferenciacion, como eliminar el token. Las credenciales son : NODE -V react.
+vemos su principal diferenciacion, como eliminar el token. Las credenciales son : Ejemplo de usuario para el challenge de Alkemy: `challenge@alkemy.org`, contraseña: `react`
 
 ## Armado de la vista al Detalle
 
